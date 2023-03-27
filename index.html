@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GoMeet Business & Meetup Landing Page</title>
+    <link rel="shortcut icon" href="img/logo.svg" />
+    <!------Font Awesome------>
+    <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet" />
+
+    <!-- Aos animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+    <!--------------------Start NavBar---------->
+    <section class="nav">
+        <div class="container">
+            <div class="img-logo">
+                <a href="/">
+                    <img src="img/logo.svg" alt="logo" />
+                </a>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#blog">Blog</a></li>
+            </ul>
+
+            <div class="hamburger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </div>
+    </section>
+
+    <!--------------------End NavBar------------------>
+
+    <!--------------------Start Slider---------->
+    <section class="slider">
+        <div class="container">
+            <div class="row">
+                <div class="col-5">
+                    <div class="img">
+                        <img src="img/slider.webp" alt="slider" />
+                    </div>
+                </div>
+                <div class="col-5">
+                    <div class="description">
+                        <h1>Get Things Done By Great Remote Team</h1>
+                        <p>
+                            We share common trends and strategies for improving your rental income and making sure you stay in high demand.
+                        </p>
+                        <form action="/" method="GET">
+                            <input type="text" placeholder="Enter Your Email" />
+                            <a href="#" class="btn_login">Get Started</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--------------------End Slider---------->
+
+    <!--------------------Start Services---------->
+    <section id="services" class="service">
+        <div class="container">
+            <div class="section-title" data-aos="fade-right">
+                <span>services</span>
+                <h1>What We Offer</h1>
+            </div>
+            <div class="row"></div>
+        </div>
+    </section>
+    <!--------------------End Services---------->
+
+    <!--------------------Start About---------->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-title">
+                <h1>Why Choose Us?</h1>
+            </div>
+            <div class="row">
+                <div class="col-5">
+                    <div class="about-description" data-aos="fade-left">
+                        <div class="head">
+                            <h1>People choose us because of our service</h1>
+                            <p>
+                                McKinsey research has shown that 70% of buying experiences are based on how the customer feels they have been treated.
+                            </p>
+                        </div>
+                        <div class="list">
+                            <!-- Start Single List -->
+                            <div class="single-list">
+                                <i class="lni lni-bolt"></i>
+                                <div class="single-list-desc">
+                                    <h4>Infinite Features</h4>
+                                    <p>
+                                        We work on diverse projects for top brands as well as for cool startups.
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- End Single List -->
+                            <!-- Start Single List -->
+                            <div class="single-list">
+                                <i class="lni lni-grid-alt"></i>
+                                <div class="single-list-desc">
+                                    <h4>Infinite Features</h4>
+                                    <p>
+                                        We work on diverse projects for top brands as well as for cool startups.
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- End Single List -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-5">
+                    <div class="img" data-aos="fade-up">
+                        <img src="img/about-image.webp " alt="About" />
+                        <div class="img2"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--------------------End About---------->
+
+    <!--------------------Start Last---------->
+    <section id="portfolio" class="last_case">
+        <div class="container">
+            <div class="section-title">
+                <span>LATEST CASES </span>
+                <h1>Our Latest Works</h1>
+            </div>
+            <div id="buttons ">
+                <button class="button-value" onclick="filterProduct( 'all') ">
+            All
+          </button>
+                <button class="button-value" onclick="filterProduct( 'Graphic') ">
+            Graphic Design
+          </button>
+                <button class="button-value" onclick="filterProduct( 'Marketing') ">
+            Marketing
+          </button>
+                <button class="button-value" onclick="filterProduct( 'Web') ">
+            Web Design
+          </button>
+                <button class="button-value" onclick="filterProduct( 'Branding') ">
+            Branding
+          </button>
+            </div>
+            <div class="row"></div>
+            <div class="all_work">
+                <a href="#" class="all_work_link">See All Worker</a>
+            </div>
+        </div>
+    </section>
+    <!--------------------End Last---------->
+
+    <!--------------------Start price---------->
+    <section id="pricing" class="price">
+        <div class="container">
+            <div class="section-title">
+                <span>Pricing</span>
+                <h1>Pricing Plan</h1>
+            </div>
+            <div class="row"></div>
+        </div>
+    </section>
+    <!--------------------End price---------->
+
+    <!--------------------Start Team---------->
+    <section class="team">
+        <div class="container">
+            <div class="section-title">
+                <span>TEAM</span>
+                <h1>Meat Our Team</h1>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <div class="card">
+                        <div class="img_card">
+                            <img src="img/team1.webp " alt="Member1" />
+
+                            <ul class="social">
+                                <li>
+                                    <a href="/facebook ">
+                                        <i class="lni lni-facebook-filled"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/linked ">
+                                        <i class="lni lni-linkedin-original"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/facebook ">
+                                        <i class="lni lni-behance-original"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="card_footer">
+                            <h5>Dahlia Moore</h5>
+                            <p>Senior Manager</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <div class="img_card">
+                            <img src="img/team2.webp " alt="Member2" />
+
+                            <ul class="social">
+                                <li>
+                                    <a href="/facebook ">
+                                        <i class="lni lni-facebook-filled"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/linked ">
+                                        <i class="lni lni-linkedin-original"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/facebook ">
+                                        <i class="lni lni-behance-original"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="card_footer">
+                            <h5>Jhone Digo</h5>
+                            <p>Markeitng</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <div class="img_card">
+                            <img src="img/team3.webp " alt="Member3" />
+
+                            <ul class="social">
+                                <li>
+                                    <a href="/facebook ">
+                                        <i class="lni lni-facebook-filled"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/linked ">
+                                        <i class="lni lni-linkedin-original"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/facebook ">
+                                        <i class="lni lni-behance-original"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="card_footer">
+                            <h5>Zara Tingo</h5>
+                            <p>Web Developer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--------------------End Team---------->
+
+    <!--------------------Start Blog-------------->
+    <section class="blog" id="blog">
+        <div class="section-title">
+            <span>BLOGS</span>
+            <h1>Latest News</h1>
+        </div>
+
+        <div class="container">
+            <div class="row"></div>
+        </div>
+    </section>
+    <!--------------------End Blog-------------->
+
+    <!----------------Button Scroll To Top------------->
+    <div class="scroll-to-top" id="scroll-to-top ">
+        <img src="img/up-arrow.png " />
+    </div>
+    <!-- Aos JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js "></script>
+    <script src="js/main.js "></script>
+</body>
+
+</html>
